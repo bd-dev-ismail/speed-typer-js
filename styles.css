@@ -144,9 +144,9 @@ button {
 #histories {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  padding: 5px;
+  height: 200px;
 }
-
 .card {
   width: 100%;
   height: 100%;
@@ -154,7 +154,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 30px;
+  padding: 20px 20px;
   color: white;
   border-radius: 15px;
   background: rgb(255, 255, 255);
@@ -180,11 +180,17 @@ button {
   position: fixed;
   top: 0;
 }
-
+@media only screen and (min-width: 992px) {
+  .card{
+    flex: 28.33%;
+    margin: 10px 10px;
+  }
+}
 @media only screen and (max-width: 700px) {
   .box-container {
     padding: 0 20px;
     width: 100%;
+    
   }
   .card {
     flex-direction: column;
